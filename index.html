@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Calculadora:</h1>
+    </header>
+    <main>
+        <div id="tela1"><p id="tela"></p></div>
+        <div id="teclas">
+            <table>
+                <tr>
+                    <th>
+                        <td id="1" class="num" onclick="clicar('1')">1</td>
+                        <td id="2" class="num" onclick="clicar('2')">2</td>
+                        <td id="3" class="num" onclick="clicar('3')">3</td>
+                        <td id="circulo" onclick="zerar()">CE</td>
+                    </th>
+                    
+                </tr>
+                <tr>
+                    <th>
+                        <td id="4" class="num" onclick="clicar('4')">4</td>
+                        <td id="5" class="num" onclick="clicar('5')">5</td>
+                        <td id="6" class="num" onclick="clicar('6')">6</td>
+                        <td class="num" onclick="clicar('*')">X</td>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <td id="7" class="num" onclick="clicar('7')">7</td>
+                        <td id="8" class="num" onclick="clicar('8')">8</td>
+                        <td id="9" class="num" onclick="clicar('9')">9</td>
+                        <td class="num" rowspan="2" onclick="clicar('+')">+</td>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <td id="0" class="numut" onclick="clicar('0')">0</td>
+                        <td class="numut" onclick="clicar('-')" >-</td>
+                        <td class="numut" onclick="calcular()">=</td>
+
+                    </th>
+                </tr>
+
+            </table>
+        </div>
+    </main>
+    <footer>
+        <p>Esse projeto está sendo feito por Iago.</p>
+    </footer>
+
+    <script>  //não fiz o JS
+
+        var resultado = document.getElementById('tela')
+        
+        function zerar() 
+        {
+            resultado.innerHTML = ""
+        }
+
+        function clicar(num) 
+        {
+            var numero = document.getElementById('tela').innerHTML
+            var numcop = resultado.innerHTML = numero + num
+        }
+
+        function calcular()
+        {
+            var resultado = document.getElementById('tela').innerHTML
+            if (resultado) 
+            {
+                document.getElementById('tela').innerHTML = eval(resultado)
+            } else 
+            {
+                tela.innerHTML = "Nada..."
+            }
+        }
+    </script>
+</body>
+</html>

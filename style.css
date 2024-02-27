@@ -1,0 +1,109 @@
+@charset "UTF=8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+body {
+    background-image: linear-gradient(to right, rgb(248, 237, 237), rgb(255, 255, 255));
+}
+
+header {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bolder;
+    background-color: rgba(131, 122, 254, 0.346);
+    padding: 5px;
+    border: 1px solid black;
+    width: 450px;
+    margin: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+main {
+    width: 450px;
+    height: 598px;
+    background-color: green;
+    margin: auto;
+    padding: 3px;
+    border: 1px solid rgb(0, 38, 0);
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.501);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+    
+
+#tela1 {
+    margin: auto;
+    font-size: 100px;
+    width: 445px;
+    height: 100px;
+    background-color: rgb(157, 248, 149);
+    border: 2px solid black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+tr {
+    font-size: 2.3em;
+}
+
+#teclas {
+    display: inline;
+    margin: auto;
+
+    width: 450px;
+}
+
+#circulo {
+    width: 106px;
+    height: 125px;
+    border-radius: 30px;
+    
+}
+
+td {
+    width: 110px;
+    height: 125px;
+    text-align: center;
+    border: 1px solid black;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 4px;
+    
+}
+
+
+.numut {
+    
+    height: 105px;
+    
+
+}
+
+td:hover {
+    background-color: rgb(255, 255, 0);
+    
+}
+
+footer {
+    background-color: rgb(1, 59, 1);
+    color: white;
+    padding: 3px;
+    margin-top: 149px;
+    text-align: center;
+    overflow-y: unset;
+    
+}
