@@ -97,13 +97,3 @@ td:hover {
     background-color: rgb(255, 255, 0);
     
 }
-
-footer {
-    background-color: rgb(1, 59, 1);
-    color: white;
-    padding: 3px;
-    margin-top: 100vh;
-    text-align: center;
-    overflow-y: unset;
-    
-}
