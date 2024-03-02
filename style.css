@@ -108,10 +108,11 @@ td:hover {
 }
 
 .back2 {
-    width: 110px;
-    position: relative;
-    left: 453px;
-    top: -495px;
+    position: absolute;
+    left: -1px;
+    top: 620px;
+
+
     border: 1px solid black;
     box-shadow: 2px 2px rgba(0, 0, 0, 0.501);
     background-color: green;
