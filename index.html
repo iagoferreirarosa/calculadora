@@ -13,13 +13,14 @@
     <main>
         <div id="tela1"><p id="tela"></p></div>
         <div id="teclas">
-            <table>
+            <table id="numini">
                 <tr>
                     <th>
                         <td id="1" class="num" onclick="clicar('1')">1</td>
                         <td id="2" class="num" onclick="clicar('2')">2</td>
                         <td id="3" class="num" onclick="clicar('3')">3</td>
                         <td id="circulo" onclick="zerar()">CE</td>
+                        
                     </th>
                     
                 </tr>
@@ -47,12 +48,27 @@
 
                     </th>
                 </tr>
-
+                
+            </table>
+            <div class="back2">
+                <table class="back">
+                    <td class="num" ="menu" onclick="extra()">...</td>
+                </table>
+            </div>
+            <table id="extra">
+                <tr>
+                    <th>
+                        <td id="1" class="num" onclick="clicar('/')">/</td>
+                        <td id="2" class="num" onclick="clicar('(')">(</td>
+                        <td id="3" class="num" onclick="clicar(')')">)</td>
+                        <td class="num" id="menu" onclick="extra()">...</td>
+                    </th>
+                </tr>
             </table>
         </div>
     </main>
 
-    <script>  //não fiz o JS
+    <script>  
 
         var resultado = document.getElementById('tela')
         
@@ -76,6 +92,22 @@
             } else 
             {
                 tela.innerHTML = "Nada..."
+            }
+        }
+
+        function extra() {
+            var extra = document.getElementById('extra')
+            var menu = document.getElementById('menu')
+            var telai = document.getElementById('numini')
+
+            if (extra.style.display == 'none')
+            {
+                extra.style.display = 'block'
+                telai.style.display = 'none'
+            } else 
+            {
+                extra.style.display = 'none'
+                telai.style.display = 'block'
             }
         }
     </script>
